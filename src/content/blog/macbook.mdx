@@ -1,190 +1,129 @@
 ---
-title: 'MacBook'
-description: 'The new MacBook Pro 2022 is here. With the Apple M2 chip, a new design, and more, the new MacBook Pro is the best laptop Apple has ever made.'
-pubDate: 'Jul 02 2022'
-heroImage: '../../assets/images/book.jpg'
-category: 'Category 4'
-tags: ['PC']
+heroImage: /src/assets/images/cardinal.webp
+category: World
+description: >-
+  At a conclave with many new members, a swift, stunning consensus built around
+  an unknown to many outside of the church.
+pubDate: 2025-05-11T15:00:00.000Z
+tags:
+  - World
+title: How a Quiet American Cardinal Became Pope
 ---
 
-**If you know HTML, you already know enough to write your first Astro component.**
+The cardinals electing a new pope to lead the Roman Catholic Church left the Sistine Chapel exhausted and hungry.
 
-Astro component syntax is a superset of HTML. The syntax was [designed to feel familiar to anyone with experience writing HTML or JSX](#differences-between-astro-and-jsx), and adds support for including components and JavaScript expressions.
+A meditation to start the conclave had dragged on and pushed their first vote deep into Wednesday evening. It had resulted in an inconclusive tally, with three main contenders. Keeping their vow of secrecy, they returned to Casa Santa Marta, the guesthouse where they were sequestered without their phones, and started talking.
 
-## JSX-like Expressions
+Over dinner, as one gluten-free cardinal picked over vegetables and others shrugged at the simple fare, they weighed their choices. [Cardinal Pietro Parolin](https://www.nytimes.com/2025/05/03/world/europe/pope-conclave-cardinal-pietro-parolin.html), 70, the Italian who ran the Vatican under Pope Francis, had entered the conclave as a front-runner but hadn’t received overwhelming support during the vote. The Italians were divided, and some of the cardinals in the room had become bothered by his failure to emphasize the collaborative meetings that Francis prioritized for governing the church.
 
-You can define local JavaScript variables inside of the frontmatter component script between the two code fences (`---`) of an Astro component. You can then inject these variables into the component's HTML template using JSX-like expressions!
+[Cardinal Peter Erdo](https://www.nytimes.com/2025/05/05/world/europe/cardinal-erdo-hungary-conservative-pope-candidate.html) of Hungary, 72, backed by a coalition of conservatives that included some African supporters, had no way to build momentum in an electorate widely [appointed by Francis](https://www.nytimes.com/interactive/2025/05/06/world/europe/cardinals-conclave-2025.html).
 
-:::note[dynamic vs reactive]
-Using this approach, you can include **dynamic** values that are calculated in the frontmatter. But once included, these values are not **reactive** and will never change. Astro components are templates that only run once, during the rendering step.
+That left Cardinal Robert Francis Prevost, 69 — a quiet American dark horse who had, surprisingly, emerged in the evening’s vote — as a source of particular interest.
 
-See below for more examples of [differences between Astro and JSX](#differences-between-astro-and-jsx).
-:::
+From left, Cardinal Pietro Parolin of Italy, Cardinal Peter Erdo of Hungary and Cardinal Robert Francis Prevost of the United States became the front-runners during the conclave.Credit...Michal Cizek/Agence France-Presse — Getty Images; Peter Lakatos/EPA, via Shutterstock; Riccardo De Luca/Associated Press
 
-### Variables
+A missionary turned religious order leader, turned Peruvian bishop, turned Vatican power player, he checked many of the boxes that a broad range of cardinals hoped to fill. His seeming ability to be from two places at once — North and South America — pleased cardinals on two continents. As the prelates sounded out the Latin American cardinals who knew him well, they liked what they heard.
 
-Local variables can be added into the HTML using the curly braces syntax:
+During the dinner, Cardinal Prevost avoided any obvious politicking or machinations, cardinals said. By the next morning, he had transformed into an unsuspecting juggernaut who ultimately left little room for rival candidacies and ideological camps.
 
-```astro
----
-const name = 'Astro'
----
+“You begin to see the direction and say, ‘Oh my goodness, I’m not going to use my five days’ worth of clothes,’” joked Cardinal Pablo Virgilio Siongco David of the Philippines. “It’s going to be resolved very fast.”
 
-<div>
-	<h1>Hello {name}!</h1>
-	<!-- Outputs <h1>Hello Astro!</h1> -->
-</div>
-```
+Interviews with more than a dozen cardinals, who could divulge only so much because of secrecy rules that carry the penalty of excommunication, and accounts from Vatican insiders told the story of how Cardinal Prevost became Pope Leo XIV. The swift, stunning and taboo-smashing consensus around an American unfamiliar to many outside the church came on Thursday among an unwieldy College of Cardinals with many new members who didn’t know one another. They had different interests, languages and priorities, but a single choice.
 
-### Dynamic Attributes
+## Building Support
 
-Local variables can be used in curly braces to pass attribute values to both HTML elements and components:
+After the death of Francis on April 21, cardinals from around the world began arriving in Rome. They joined powerful players in the Vatican who ran the church’s bureaucracy, including Cardinal Prevost, whose career Francis had boosted.
 
-```astro title="src/components/DynamicAttributes.astro" "{name}" "${name}"
----
-const name = 'Astro'
----
+Despite his intimate understanding of the Vatican, Cardinal Prevost was still among the newbies, having been a cardinal not even for two years. And he had questions about the conclave.
 
-<h1 class={name}>Attribute expressions are supported</h1>
+He turned to one of the reported front-runners, Cardinal Luis Antonio Gokim Tagle of the Philippines, for help.
 
-<MyComponent templateLiteralNameAttribute={`MyNameIs${name}`} />
-```
+“‘How does this work?’” the American said, according to [Cardinal Tagle](https://www.nytimes.com/2025/04/29/world/asia/luis-tagle-asian-pope.html), who recounted the conversation. “I had experience in a conclave,” Cardinal Tagle said, “and he didn’t.”
 
-:::caution
-HTML attributes will be converted to strings, so it is not possible to pass functions and objects to HTML elements.
-For example, you can't assign an event handler to an HTML element in an Astro component:
+ImageCardinal Parolin, Cardinal Luis Antonio Tagle and Cardinal Prevost attending a Mass held for Francis last month.Credit...Antonio Masiello/Getty Images
 
-```astro
----
-// dont-do-this.astro
-function handleClick() {
-	console.log('button clicked!')
-}
----
+Unlike Cardinal Tagle, he also didn’t have the name recognition considered necessary in an election among so many new cardinals who barely knew one another. Without a high profile or obvious base of support, the Chicago-born Villanova graduate moved below the radar.
 
-<!-- ❌ This doesn't work! ❌ -->
-<button onClick={handleClick}>Nothing will happen when you click me!</button>
-```
+“I didn’t even know his name,” Cardinal David of the Philippines said.
 
-Instead, use a client-side script to add the event handler, like you would in vanilla JavaScript:
+But Cardinal Prevost was not a complete unknown. As the former leader of the Order of St. Augustine, which operates around the globe, and as the head of the Vatican office overseeing the world’s bishops, he had developed powerful connections and backers. First among them had been Francis, who put his career on the fast track. And his decades in Peru, fluent Spanish and leadership of the Pontifical Commission for Latin America gave him deep, and decisive, relationships on the continent.
 
-```astro
----
-// do-this-instead.astro
----
+“We almost all know him. He’s one of us,” said Cardinal Baltazar Enrique Porras Cardozo of Venezuela, who has known him for decades.
 
-<button id='button'>Click Me</button>
-<script>
-	function handleClick() {
-		console.log('button clicked!')
-	}
-	document.getElementById('button').addEventListener('click', handleClick)
-</script>
-```
+In the weeks before the conclave, the cardinals participated in a series of private meetings to discuss their concerns about the future of the church. Unlike Francis, who made his mark with a short speech sharing his vision for the church, several cardinals said that Cardinal Prevost’s remarks did not stand out. “Like everyone else,” said Cardinal Juan José Omella Omella of Spain.
 
-:::
+Cardinal Jean-Paul Vesco of France, the archbishop of Algiers, also could not recall what the American had said, but he got to talk to him on the sidelines of the meetings — which was important, he said, because he was increasingly being talked about as a candidate based on his “incredible” résumé, fluent Italian, reputation as a moderate and connection to Francis. The cardinal started asking around to people who had worked with the American to vet him, and learned that he listened and worked well in groups. “I did my job,” Cardinal Vesco said. “I have to vote. I have to know the person.”
 
-### Dynamic HTML
+Cardinal Wilton Gregory of the United States also said that Cardinal Prevost had engaged “quite effectively” in the smaller group discussions with cardinals.
 
-Local variables can be used in JSX-like functions to produce dynamically-generated HTML elements:
+ImageCardinals leaving a meeting ahead of the conclave, in Rome last Monday. Many of the important conversations to determine the new pope happened on the sidelines.Credit...Murad Sezer/Reuters
 
-```astro title="src/components/DynamicHtml.astro" "{item}"
----
-const items = ['Dog', 'Cat', 'Platypus']
----
+Those more intimate settings played to Cardinal Prevost’s strengths, as he had gained a reputation around Rome as a studiously prepared, collegial and organized collaborator, especially as a top Vatican department head.
 
-<ul>
-	{items.map((item) => <li>{item}</li>)}
-</ul>
-```
+“I just admire the way he runs a meeting,” Cardinal Blase J. Cupich of Chicago, his hometown, said. “I mean, that’s hard to do, when you’ve got people of different language groups and cultures, and you’re trying to advise a pope on who should be a bishop, and you’re listening to all those people.”
 
-Astro can conditionally display HTML using JSX logical operators and ternary expressions.
+On Saturday, May 3, five days before the conclave, the cardinals drew lots and assigned key roles. With 127 of the 133 who ultimately voted in attendance, Cardinal Prevost was chosen to assist in running the daily meetings before they were sequestered and voting began.
 
-```astro title="src/components/ConditionalHtml.astro" "visible"
----
-const visible = true
----
+As the different factions argued in those daily meetings about the future direction of the church, the cardinals from the Americas seemed to coalesce around him.
 
-{visible && <p>Show me!</p>}
+Cardinal Timothy M. Dolan of New York, an outspoken and gregarious figure, said he tried to get to know his fellow American better at a breakfast.
 
-{visible ? <p>Show me!</p> : <p>Else show me!</p>}
-```
+Cardinal Gerhard Ludwig Müller of Germany noted an electoral base that seemed to be forming, saying, “it’s a good number of cardinals from South America, North America.”
 
-### Dynamic Tags
+Cardinal Porras of Venezuela said that cardinals from Latin America and the United States seemed on the same page about Cardinal Prevost. “When you have friendship first,” he said, “everything is easier.”
 
-You can also use dynamic tags by setting a variable to an HTML tag name or a component import:
+The more the cardinals learned about Cardinal Prevost, the more they liked, cardinals said. “Bob, this could be proposed to you,” Cardinal Joseph W. Tobin of Newark, N.J., said he told Cardinal Prevost soon before the conclave began.
 
-```astro title="src/components/DynamicTags.astro" /Element|(?<!My)Component/
----
-import MyComponent from './MyComponent.astro'
-const Element = 'div'
-const Component = MyComponent
----
+Cardinal Prevost had a lot of the experience they were looking for, said Cardinal Vincent Nichols of England. He had the heart of a missionary, scholarly depth and knowledge of the world. He had run a diocese as a bishop, which put him in close contact with parishioners, but had also worked in the Curia, the Roman bureaucracy that helps govern the church.
 
-<Element>Hello!</Element>
-<!-- renders as <div>Hello!</div> -->
-<Component />
-<!-- renders as <MyComponent /> -->
-```
+It did not escape the cardinals, Cardinal Nichols said, that Cardinal Parolin, the Vatican’s top diplomat, who was being pushed by his supporters in and out of the conclave, had deep experience only in the church bureaucracy.
 
-When using dynamic tags:
+“We’re not stupid,” he said.
 
-- **Variable names must be capitalized.** For example, use `Element`, not `element`. Otherwise, Astro will try to render your variable name as a literal HTML tag.
+## Quickly Shifting Fortunes
 
-- **Hydration directives are not supported.** When using [`client:*` hydration directives](/en/core-concepts/framework-components/#hydrating-interactive-components), Astro needs to know which components to bundle for production, and the dynamic tag pattern prevents this from working.
+On Wednesday, after a long and solemn procession into the Sistine Chapel, the cardinals gathered at their assigned seats and took their vows. Just before 6 p.m. the doors closed for the beginning of the conclave.
 
-### Fragments
+The meditation at the start, remarks on the gravity of the task at hand, ran about an hour, so long that Cardinal Parolin, who was running the conclave, asked them if they wanted to call it a night and delay the first vote until the next morning.
 
-Astro supports using either `<Fragment> </Fragment>` or the shorthand `<> </>`.
+“We didn’t have dinner, and there were no breaks — toilet breaks — either,” said Cardinal David of the Philippines, but the group decided that it wanted a vote.
 
-Fragments can be useful to avoid wrapper elements when adding [`set:*` directives](/en/reference/directives-reference/#sethtml), as in the following example:
+As voting got underway around 7:30 p.m., the delay, with no explanation to the outside world, caused a stir among the waiting crowds. It seemed perhaps that the cardinals had already picked a pope who was getting dressed to come out onto the balcony.
 
-```astro title="src/components/SetHtml.astro" "Fragment"
----
-const htmlString = '<p>Raw HTML content</p>'
----
+Instead, the first vote that night amounted to what Cardinal Omella of Spain called “a bit of a preliminary poll.”
 
-<Fragment set:html={htmlString} />
-```
+“In the first vote, there were several candidates who won significant votes,” Cardinal Lazarus You Heung-sik of South Korea said, according to the South Korean news agency Yonhap. Vatican insiders said that those candidates included Cardinals Parolin, Erdo and Prevost.
 
-### Differences between Astro and JSX
+That’s when the cardinals returned to the guesthouse and started discussing the strengths and weaknesses of the men.
 
-Astro component syntax is a superset of HTML. It was designed to feel familiar to anyone with HTML or JSX experience, but there are a couple of key differences between `.astro` files and JSX.
+“Once we’re in Santa Marta, there was talk about individual candidates,” Cardinal Nichols of England said. “That’s what we’re supposed to do.”
 
-#### Attributes
+Cardinal Müller of Germany, a prominent conservative critic of Francis whom the late pope had fired from his position as the church’s top doctrinal official, said he talked to the Latin Americans about Cardinal Prevost and was told that he was “not divisive.”
 
-In Astro, you use the standard `kebab-case` format for all HTML attributes instead of the `camelCase` used in JSX. This even works for `class`, which is not supported by React.
+The climate for Cardinal Prevost seemed to be growing increasingly positive. The election was coming to him.
 
-```jsx del={1} ins={2} title="example.astro"
-<div className="box" dataValue="3" />
-<div class="box" data-value="3" />
-```
+The next morning’s votes — the second and third of the conclave — made the picture clear.
 
-#### Multiple Elements
+ImageSt. Peter’s Basilica on Thursday. For many of those outside, the end of the conclave was unexpectedly swift.Credit...Hannah McKay/Reuters
 
-An Astro component template can render multiple elements with no need to wrap everything in a single `<div>` or `<>`, unlike JavaScript or JSX.
+“In the fourth vote, the ballots overwhelmingly shifted” to Cardinal Prevost, Cardinal You of South Korea said.
 
-```astro title="src/components/RootElements.astro"
----
-// Template with multiple elements
----
+Cardinal Müller sat behind the American front-runner in the Sistine Chapel and noticed that he seemed calm. Cardinal Tagle, who sat next to Cardinal Prevost, noticed him taking deep breaths as votes amassed in his favor.
 
-<p>No need to wrap elements in a single containing element.</p>
-<p>Astro supports multiple root elements in a template.</p>
-```
+“I asked him, ‘Do you want a candy?’ and he said ‘Yes,’” Cardinal Tagle said.
 
-#### Comments
+During one of the votes, Cardinal Tobin, as he held his ballot high and put it in the urn, turned and saw Cardinal Prevost, whom he had known for about 30 years.
 
-In Astro, you can use standard HTML comments or JavaScript-style comments.
+“I took a look at Bob,” Cardinal Tobin of New Jersey said, “and he had his head in his hands.”
 
-```astro title="example.astro"
----
+Later in the afternoon, they voted again, then counted the ballots one by one. When Cardinal Prevost reached 89 votes, the two-thirds majority threshold needed to become pope, the room erupted in a standing ovation. “And he remained seated!” Cardinal David said. “Somebody had to pull him up. We were all teary-eyed.”
 
----
+As the counting continued and the votes for Cardinal Prevost neared triple digits, Cardinal Parolin had to ask them to sit down so they could finish.
 
-<!-- HTML comment syntax is valid in .astro files -->{/* JS comment syntax is also valid */}
-```
+“He obtained a very, very large majority of votes,” Cardinal Désiré Tsarahazana of Madagascar said.
 
-:::caution
-HTML-style comments will be included in browser DOM, while JS ones will be skipped. To leave TODO messages or other development-only explanations, you may wish to use JavaScript-style comments instead.
-:::
+After his election, cardinals enthusiastically congratulated the new pope. A short and uncontentious conclave was over and Leo XIV stepped through the crimson curtains onto the balcony of St. Peter’s Basilica and the world stage.
+
+Cardinal Tagle, the onetime favorite who days earlier had been asked by the American about the rules, told him: “‘If there’s anything you want to change about the conclave rules — it’s all in your hands now.’”
+
+ImageThe white smoke that signaled Pope Leo XIV’s election.Credit...Christopher Furlong/Getty Images
