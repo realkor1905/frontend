@@ -4,6 +4,6 @@ export const CATEGORIES = [
 	'Business',
 	'Arts',
 	'Lifestyle',
-	'IT/Science',
+	'ITScience',
 	'Opinion'
 ] as const
